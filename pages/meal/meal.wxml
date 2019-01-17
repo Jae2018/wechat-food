@@ -1,0 +1,57 @@
+<!--pages/meal/meal.wxml-->
+
+<i-tabs current="{{ current }}" bindchange="handleChange">
+  <i-tab key="tab1" title="选项1"></i-tab>
+  <i-tab key="tab2" title="选项2"></i-tab>
+  <i-tab key="tab3" title="选项3"></i-tab>
+</i-tabs>
+
+<i-panel>
+  <i-cell-group>
+    <i-cell title="配菜">
+      <input slot="footer" type="text" />
+    </i-cell>
+
+    <i-cell title="配料">
+      <input slot="footer" type="text" />
+    </i-cell>
+
+    <i-cell title="卡路里(Kcal)">
+      <input slot="footer" type="number" placeholder="如200Kcal" />
+    </i-cell>
+
+    <i-cell title="蛋白质(g)">
+      <input slot="footer" type="number" placeholder="如2g" />
+    </i-cell>
+
+    <i-cell title="碳水化合物(g)">
+      <input slot="footer" type="number" placeholder="如2g" />
+    </i-cell>
+
+    <view class='padding'>
+      配餐简介
+    </view>
+    <textarea class='in' type="number" maxlength='80' placeholder="简介"></textarea>
+
+    <view class='line'></view>
+
+    <i-cell title="套餐名">
+      <input slot="footer" type="text" placeholder="套餐名" />
+    </i-cell>
+
+    <view class='photo-item'>
+      <label class='l'>成品照片上传</label>
+      <image class='i'></image>
+    </view>
+
+    <i-cell title="定价">
+      <input slot="footer" type="number" placeholder="价格" />
+    </i-cell>
+
+    <i-cell title="发布设置" value="发布" is-link bindtap='topublic'>
+    </i-cell>
+
+  </i-cell-group>
+</i-panel>
+
+<i-button long="true" type='success' bindtap='handleclick'>完成</i-button>

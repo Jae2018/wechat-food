@@ -1,0 +1,28 @@
+/* pages/alt-list/alt-list.wxss */
+
+.item {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  padding: 16px 16px 16px 16px;
+  align-items: center;
+}
+
+.item-right {
+  margin-left: 10px;
+}
+
+view {
+  font-size: 15px;
+}
+
+image {
+  width: 7rem;
+  height: 7rem;
+}
+
+.item-line {
+  height: 1px;
+  background: #ddd;
+  /* margin-top: 10px; */
+}

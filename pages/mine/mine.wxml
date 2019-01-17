@@ -1,0 +1,24 @@
+<!--pages/mine/mine.wxml-->
+<view class='top'>
+  <i-avatar size="large" src="">梁</i-avatar>
+  <view>
+    <text class='top-text'>张阿森纳（教练）</text>
+    <view class='top-view'>
+      <image src='{{src}}'></image>
+      <text>18922778899</text>
+    </view>
+  </view>
+</view>
+<view class='divider'></view>
+<image src='{{url}}' mode='scaleToFill' lazy-load='true' class='middle-image'></image>
+<!-- <view class='divider'></view> -->
+<view class='sub-btn' bindtap='toorder'>我的订单</view>
+<view class='line'></view>
+<view class='sub-btn' bindtap='tolead'>我的教练</view>
+<view class='divider'></view>
+<view class='sub-btn' bindtap='toalt'>@我的</view>
+<view class='line'></view>
+<view class='sub-btn' bindtap='toaddress'>配送地址</view>
+<view class='divider'></view>
+<view class='sub-btn' bindtap='tobelead'>升级成为教练</view>
+<view class='divider'></view>

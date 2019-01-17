@@ -1,0 +1,32 @@
+/* pages/be-lead/be-lead.wxss */
+
+.item{
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.photo-item{
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.group{
+  display: flex;
+}
+
+.l{
+  font-size: 15px;
+  width: 30%;
+}
+
+.i{
+  width: 5rem;
+  height: 5rem;
+  background: #ddd;
+}

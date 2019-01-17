@@ -1,0 +1,49 @@
+<!--pages/add-addr/add-addr.wxml-->
+<i-panel>
+  <i-cell-group>
+    <i-cell title="联系人">
+      <input type='text' placeholder='请输入取货人姓名'></input>
+    </i-cell>
+
+    <view class='item'>
+      <label>性别</label>
+      <radio-group class="group" bindchange="radioChange">
+        <i-radio value='先生' checked="{{checked}}"></i-radio>
+        <i-radio value='女士' checked="{{checked}}"></i-radio>
+      </radio-group>
+    </view>
+
+    <view class='line'></view>
+
+    <i-cell title="手机号">
+      <input slot="footer" type="number" placeholder="请输入取货人手机号" />
+    </i-cell>
+
+    <i-cell title="地址" is-link>
+      <input slot="footer" placeholder='请选择收货地址' disabled='true'></input>
+    </i-cell>
+
+    <i-cell title="门牌号">
+      <input slot="footer" type="number" placeholder="如2楼2门201" />
+    </i-cell>
+    
+    <view class='line'></view>
+
+    <view class='item'>
+      <label class='tag-title'>标签</label>
+      <label class='tag'>公司</label>
+      <label class='tag'>家</label>
+      <label class='tag'>学校</label>
+    </view>
+
+    <view class='line'></view>
+
+    <view class='item'>
+      <i-radio value='设为默认地址'></i-radio>
+    </view>
+  </i-cell-group>
+</i-panel>
+
+<view class='suspend-block'></view>
+
+<i-button bind:click="handleClick" class='suspend-btn'>保存</i-button>

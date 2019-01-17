@@ -1,0 +1,6 @@
+<!--pages/order-list/order-list.wxml-->
+<i-panel class="cell-panel-demo" title="2019-1-16">
+  <i-cell-group>
+    <i-cell title="炒个鸡蛋" label="附加描述" is-link></i-cell>
+  </i-cell-group>
+</i-panel>

@@ -1,0 +1,21 @@
+<!--pages/addr-list/addr-list.wxml-->
+
+<view class='top'>我的收货地址</view>
+<view class='item' bindtap='select'>
+  <view class='item-left'>
+    <view class='title'>天津市西青区花园路100号2楼1001</view>
+    <view class='content'>
+      <label>1346546431</label>
+      <label class='name'>张三</label>
+      <label class='default'>默认地址</label>
+    </view>
+  </view>
+  <view class='item-right'>
+    <image src='../../images/pen.png'></image>
+  </view>
+  <view class='line'></view>
+</view>
+
+<view class='suspend-block'></view>
+
+<i-button bind:click="handleClick" class='suspend-btn'>添加地址</i-button>

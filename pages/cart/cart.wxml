@@ -1,0 +1,15 @@
+<!--pages/cart/cart.wxml-->
+<text>购物车,UI待定</text>
+
+<view>
+  
+
+</view>
+
+<view class='footer'>
+  <view class='footer-left'>
+    总金额：
+    <text>￥ {{cost}}</text>
+  </view>
+  <view class='footer-right' bindtap='goPay'>结算</view>
+</view>

@@ -1,0 +1,110 @@
+/**app.wxss**/
+@import 'we-ui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.divider {
+  width: 100%;
+  height: 0.5rem;
+  background: #eee;
+}
+
+.line{
+  height: 1px;
+  background: #eee;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 16px;
+}
+
+.sub-title {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+}
+
+.scroll-view {
+  display: flex;
+  white-space: nowrap;
+  height: 4rem;
+}
+
+.scroll-view view {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 5rem;
+  height: 3rem;
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(208, 208, 208, 1);
+  text-align: inherit;
+}
+
+.scroll-image {
+  display: flex;
+  white-space: nowrap;
+  /* height: 6rem; */
+}
+
+.scroll-image view {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  color: rgba(80, 80, 80, 1);
+  background-color: rgba(208, 208, 208, 1);
+  text-align: inherit;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-left {
+  background: #999;
+  width: 60%;
+  line-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-right {
+  background: #808080;
+  width: 40%;
+  text-align: center ;
+  line-height: 3rem;
+}
+
+.suspend-btn{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+}
+
+.suspend-block{
+  height: 3rem;
+}
+
+.list-item {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+}

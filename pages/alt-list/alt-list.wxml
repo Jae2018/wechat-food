@@ -1,0 +1,13 @@
+<!--pages/alt-list/alt-list.wxml-->
+
+<view class='item'>
+  <image src='../../images/holder.png'></image>
+  <view class='item-right'>
+    <view>减脂套餐1号</view>
+    <view>推送人：@Liu_liwang</view>
+    <view>早餐 - 第一阶段</view>
+    <view>推送时间：2018.01.15</view>
+    <view>￥：35.00</view>
+  </view>
+</view>
+<view class='item-line'></view>

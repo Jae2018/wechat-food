@@ -1,0 +1,17 @@
+<!--pages/public/public.wxml-->
+
+<view wx:for="{{list}}" wx:key="index">
+  <view class='item'>
+    <checkbox-group bindchange='checkchange'>
+      <radio checked='{{item.check}}'></radio>
+    </checkbox-group>
+    <view class='item-right'>
+      <view>{{item.title}}</view>
+      <view>{{item.content}}</view>
+    </view>
+  </view>
+
+  <view class='l'></view>
+</view>
+
+<i-button bind:click="handleClick" long="true" class='suspend-btn'>完成</i-button>

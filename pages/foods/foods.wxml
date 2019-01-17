@@ -1,0 +1,7 @@
+<!--pages/foods/foods.wxml-->
+<view wx:for="{{list}}" wx:key="{{item.id}}" style='margin:16px 0 0 0'>
+  <i-card title="炒鸡蛋" thumb="{{item.url}}" bindtap="click" data-index="{{item.id}}">
+    <view slot="content">{{item.name}}</view>
+    <view slot="footer">{{item.content}}</view>
+  </i-card>
+</view>

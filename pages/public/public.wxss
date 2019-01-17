@@ -1,0 +1,19 @@
+/* pages/public/public.wxss */
+
+.item{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 4rem;
+  font-size: 15px;
+}
+
+.item-right{
+  margin-left: 10px;
+}
+
+.l{
+  height: 1px;
+  background: #dedede;
+}

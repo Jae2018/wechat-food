@@ -1,0 +1,44 @@
+/* pages/meal/meal.wxss */
+
+.photo-item {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.padding {
+  padding-left: 16px;
+  display: flex;
+  height: 2rem;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.in {
+  border: 1px solid #ddd;
+  height: 4rem;
+  width: 90%;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 2px 2px 2px 2px;
+  font-size: 14px;
+  max-lines: 3;
+}
+
+.group {
+  display: flex;
+}
+
+.l {
+  font-size: 15px;
+  width: 30%;
+}
+
+.i {
+  width: 5rem;
+  height: 5rem;
+  background: #ddd;
+}

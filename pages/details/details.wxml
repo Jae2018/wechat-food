@@ -1,0 +1,81 @@
+<!--pages/details/details.wxml-->
+<image src='{{url}}'></image>
+
+<view id='view'>
+  <text>套餐1</text>
+  <view style='position:absolute;right:10px'>
+    <text>100</text>
+    <image src='../../images/good.png' style='width:32rpx;height:32rpx;padding-left:6px'></image>
+  </view>
+</view>
+
+<text style='padding-left:10px'>  123Kcal</text>
+
+<view id='view'>
+  <text>配餐：@Liu_xx</text>
+  <text style='padding-left:20px'>￥20.0</text>
+</view>
+
+<view class='line'></view>
+
+<view id='view'>
+  说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字
+</view>
+
+<view class='line'></view>
+
+<view id='view'>
+  <view id='v2'>
+    <text>123</text>
+    <view id='v3'>千卡</view>
+  </view>
+  <view id='v2'>
+    <text>123</text>
+    <view id='v3'>碳水</view>
+  </view>
+  <view id='v2'>
+    <text>123</text>
+    <view id='v3'>蛋白质</view>
+  </view>
+  <view id='v2'>
+    <text>123</text>
+    <view id='v3'>脂肪</view>
+  </view>
+</view>
+
+<view style='height:1rem'></view>
+
+<view style='padding-left:10px'>
+  食材
+  <view id='view' wx:for="{{list}}" wx:key="{{id}}">
+    <text style='width:80%'>{{item.name}}</text>
+    <text style='width:20%'>{{item.weight}}</text>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view style='padding-left:10px'>
+  其他推荐
+  <scroll-view class='scroll' scroll-x>
+    <view id='v1' wx:for="{{list}}" wx:key="id">
+      <image src='{{url}}' style='width:100px;height:100px'></image>
+      <view style='diaplsy:flex'>
+        <text>套餐{{index}}</text>
+        <text style='margin-left:10px'>{{item.n}}</text>
+        <image style='width:10px;height:10px' src='../../images/good.png'></image>
+      </view>
+      <view>{{item.p}}</view>
+    </view>
+  </scroll-view>
+</view>
+
+<view style='height:3rem'></view>
+
+<view class='footer'>
+  <view class='footer-left' bindtap='gocart'>
+    <image src='../../images/cart.png' style='width:32px;height:32px'></image>
+    购物车xxxx
+  </view>
+  <view class='footer-right' bindtap='goPay'>去结账</view>
+</view>

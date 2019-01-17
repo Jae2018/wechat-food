@@ -1,0 +1,53 @@
+/**index.wxss**/
+
+.location {
+  display: flex;
+  height: 3rem;
+  font-size: 14px;
+  align-items: center;
+}
+
+.l-label {
+  margin-left: 10px;
+}
+
+.l-image {
+  width: 24px;
+  height: 24px;
+  margin: 10px;
+}
+
+.l-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: green;
+  color: white;
+  font-size: 12px;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.banner {
+  border-radius: 0.5rem;
+}
+
+.left {
+  width: 25%;
+  height: 18rem;
+  display: block;
+  background: #e5e5e5;
+}
+
+#left {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.right {
+  width: 75%;
+}

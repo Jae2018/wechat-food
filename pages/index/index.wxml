@@ -1,0 +1,32 @@
+<view class='location'>
+  <image class='l-image'></image>
+  <view>
+    <view>天津市南开区花苑产业园区</view>
+    <label>13800012345</label>
+    <label class='l-label'>刘先生</label>
+  </view>
+  <image class='l-image'></image>
+  <label class='l-btn'>配餐</label>
+</view>
+
+<swiper indicator-dots="true" autoplay="true" interval="3500" duration="1500">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" mode='scaleToFill' />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view>
+  <view class='left'>
+    <label id='left'>人气TOP</label>
+    <label id='left'>人气TOP</label>
+    <label id='left'>人气TOP</label>
+    <label id='left'>人气TOP</label>
+  </view>
+
+  <view class='right'>
+
+
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/be-lead/be-lead.wxml-->
+<i-panel>
+  <i-cell-group>
+    <i-cell title="联系人">
+      <input type='text' slot="footer" placeholder='请输入联系人姓名'></input>
+    </i-cell>
+
+    <view class='item'>
+      <label class='l'>性别</label>
+      <radio-group class="group" bindchange="radioChange">
+        <i-radio value='先生' checked="{{checked}}"></i-radio>
+        <i-radio value='女士' checked="{{checked}}"></i-radio>
+      </radio-group>
+    </view>
+    
+    <view class='line'></view>
+
+    <i-cell title="手机号">
+      <input type='text' slot="footer" placeholder='请输入手机号姓名'></input>
+    </i-cell>
+
+    <i-cell title="真实姓名">
+      <input type='text' slot="footer" placeholder='请输入真实姓名'></input>
+    </i-cell>
+
+    <i-cell title="身份证号">
+      <input type='text' slot="footer" placeholder='请输入身份证号'></input>
+    </i-cell>
+
+    <i-cell title="从业年数">
+      <input type='text' slot="footer" placeholder='请输入从业年数'></input>
+    </i-cell>
+
+    <i-cell title="毕业院校">
+      <input type='text' slot="footer" placeholder='请输入毕业院校'></input>
+    </i-cell>
+
+    <view class='line'></view>
+
+    <view class='photo-item'>
+      <label class='l'>证件照上传</label>
+      <image class='i'></image>
+    </view>
+
+    <view class='line'></view>
+
+    <view class='photo-item'>
+      <label class='l'>个人生活照</label>
+      <image class='i'></image>
+    </view>
+  </i-cell-group>
+</i-panel>
+
+<view class='suspend-block'></view>
+
+<i-button bind:click="handleClick" long="true" class='suspend-btn'>保存</i-button>
