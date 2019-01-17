@@ -9,43 +9,53 @@ Page({
       'https://img.xiaopiu.com/userImages/img418516857053690.jpg',
       'https://img.xiaopiu.com/userImages/img418616857054630.jpg'
     ],
-    src: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547529567905&di=d7965180f52feb893b88a0f1a01ed1cf&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F012c8557dabc710000012e7e43c512.jpg%401280w_1l_2o_100sh.jpg",
-    indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    list:[
-      {
-        id:1,
-        name:"早餐"
+    tabs: [{
+        id: 1,
+        name: "人气TOP"
       },
       {
         id: 2,
-        name: "午餐"
+        name: "瘦身减脂"
       },
       {
         id: 3,
-        name: "晚餐"
+        name: "低卡高能"
       },
       {
         id: 4,
-        name: "加餐"
+        name: "狂吃不胖"
+      }
+    ],
+    list: [{
+        id: 1,
+        url: "https://img.xiaopiu.com/userImages/img419216857093218.png",
+        name: "三文鱼烧饼",
+        author: "张旭",
+        praise: 100,
+        price: "20.0",
+        number: 1
+      },
+      {
+        id: 1,
+        url: "https://img.xiaopiu.com/userImages/img4195168570dd980.jpg",
+        name: "三文鱼烧饼",
+        author: "张旭",
+        praise: 100,
+        price: "20.0",
+        number: 1
+      },
+      {
+        id: 1,
+        url: "https://img.xiaopiu.com/userImages/img420116857108900.jpeg",
+        name: "三文鱼烧饼",
+        author: "张旭",
+        praise: 100,
+        price: "20.0",
+        number: 1
       }
     ]
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../content/content'
-    })
-  },
-  bindViewTap2: function() {
-    wx.navigateTo({
-      url: '../foods/foods',
-    })
   },
   onLoad: function() {
     if (app.globalData.userInfo) {
@@ -83,27 +93,12 @@ Page({
       hasUserInfo: true
     })
   },
-  goMaterial: function() {
-
+  //类型点击回调
+  tabselect: function(e) {
+    console.log(e)
   },
-  goFoods: function() {
-    wx.navigateTo({
-      url: '../foods/foods',
-    })
-  },
-  catering: function() {
-    wx.navigateTo({
-      url: '../meal/meal',
-    })
-  },
-  cart: function() {
-    wx.switchTab({
-      url: '../cart/cart',
-    })
-  },
-  godetail:function(){
-    wx.navigateTo({
-      url: '../details/details',
-    })
+  //套餐点击回调
+  mealselect: function(e) {
+    console.log(e.currentTarget.dataset)
   }
 })

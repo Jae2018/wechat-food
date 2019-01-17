@@ -1,11 +1,11 @@
 <view class='location'>
-  <image class='l-image'></image>
+  <image class='l-image' src='../../images/location.png'></image>
   <view>
     <view>天津市南开区花苑产业园区</view>
     <label>13800012345</label>
     <label class='l-label'>刘先生</label>
   </view>
-  <image class='l-image'></image>
+  <image class='l-image' src='../../images/search.png'></image>
   <label class='l-btn'>配餐</label>
 </view>
 
@@ -17,16 +17,22 @@
   </block>
 </swiper>
 
-<view>
+<view class='bottom'>
   <view class='left'>
-    <label id='left'>人气TOP</label>
-    <label id='left'>人气TOP</label>
-    <label id='left'>人气TOP</label>
-    <label id='left'>人气TOP</label>
+    <label id='left' wx:for='{{tabs}}' wx:key='index' bindtap='tabselect'>{{item.name}}</label>
   </view>
 
-  <view class='right'>
+  <scroll-view scroll-y class='right'>
+    <view id='right' wx:for='{{list}}' wx:key='index' bindtap='mealselect' data-meal='{{item}}'>
+      <image class='right-image' mode='scaleToFill' src='{{item.url}}'></image>
+      <view class='right-text'>
+        <label id='right-l'>{{item.name}}</label>
+        <label id='right-l'>配餐：@{{item.author}}</label>
+        <label id='right-l'>{{item.praise}}<image class='right-praise' src='../../images/good.png'></image></label>
+        <label id='right-l'>￥ {{item.price}}</label>
+      </view>
+      <image class='right-i' mode='scaleToFill' src='../../images/add.png'></image>
+    </view>
+  </scroll-view>
 
-
-  </view>
 </view>

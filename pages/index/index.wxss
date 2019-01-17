@@ -2,29 +2,30 @@
 
 .location {
   display: flex;
-  height: 3rem;
+  height: 120rpx;
   font-size: 14px;
   align-items: center;
 }
 
 .l-label {
-  margin-left: 10px;
+  margin-left: 52rpx;
 }
 
 .l-image {
-  width: 24px;
-  height: 24px;
-  margin: 10px;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 50rpx;
+  margin-right: 32rpx;
 }
 
 .l-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 90rpx;
+  height: 90rpx;
   border-radius: 50%;
-  background: green;
+  background: #1296db;
   color: white;
   font-size: 12px;
-  line-height: 2.5rem;
+  line-height: 90rpx;
   text-align: center;
 }
 
@@ -32,16 +33,20 @@
   border-radius: 0.5rem;
 }
 
+.bottom {
+  display: flex;
+}
+
 .left {
   width: 25%;
-  height: 18rem;
+  height: 620rpx;
   display: block;
   background: #e5e5e5;
 }
 
 #left {
-  height: 2.5rem;
-  line-height: 2.5rem;
+  height: 90rpx;
+  line-height: 90rpx;
   font-size: 14px;
   align-items: center;
   justify-content: center;
@@ -50,4 +55,40 @@
 
 .right {
   width: 75%;
+  height: 620rpx;
+}
+
+#right {
+  display: flex;
+  height: 180rpx;
+  align-items: center;
+}
+
+.right-image {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 15rpx 15rpx 15rpx 15rpx;
+}
+
+.right-text {
+  margin: 15rpx 15rpx 15rpx 15rpx;
+}
+
+#right-l {
+  align-items: center;
+  font-size: 11px;
+  display: flex;
+}
+
+.right-praise {
+  width: 22rpx;
+  height: 22rpx;
+  margin-left: 20rpx;
+}
+
+.right-i{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 100rpx;
+  margin-top: 30rpx;
 }
